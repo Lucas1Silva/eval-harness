@@ -1,12 +1,3 @@
-"""Geração e validação de CNPJ, numérico e alfanumérico.
-
-Regras da Receita Federal (CNPJ alfanumérico, em vigor desde jul/2026):
-- 14 caracteres: 8 de raiz + 4 de ordem (filial) + 2 dígitos verificadores (DV)
-- os 12 primeiros podem ser 0-9 ou A-Z; os 2 DVs são sempre 0-9
-- cada caractere vale (código ASCII - 48): '0'..'9' -> 0..9, 'A'..'Z' -> 17..42
-- cada DV é calculado por módulo 11
-"""
-
 import random
 import string
 
